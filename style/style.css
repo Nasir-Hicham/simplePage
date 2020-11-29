@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: tahoma, arial;
+}
+header{
+    width: 100%;
+    border: 1px solid #797979;
+}
+header .innerHeader{
+    width: 55%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.innerHeader .logo{
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px;
+}
+nav ul li{
+   display: inline-block; 
+   padding: 15px;
+   height: 100%;
+   transition: 0.4s ease-in-out all;
+}
+nav ul li a{
+    margin-right: 5px;
+    color: black;
+}
+nav ul li.active, li:hover{
+    font-weight: bold;
+    background-color: dodgerblue;
+}
+@media (max-width: 940px){
+    header .innerHeader{
+        width: 75%;
+        margin: auto;
+    }
+    .innerHeader .logo{
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+    }
+    nav ul li{
+        padding: 10px;
+     }
+     nav ul li a{
+         margin-right: 4px;
+         font-size: 17px;
+     }
+     footer .innerFooter{
+        width: 90%;
+        margin: auto;
+        font-size: 16px;
+    }
+    section .innerAbout{
+        width: 90%;
+        margin: auto;
+        margin-right: 0;
+    }
+    section .innerSection{
+        width: 90%;
+    }
+    section .innerServices{
+        width: 80%;
+    }
+    section .innerServices h1{
+        font-size: 20px;
+    }
+    .services1, .services2, .services3{
+        margin-right: 25px;
+    }
+}
+@media (max-width: 630px){
+    header .innerHeader{
+        width: 90%;
+        margin: auto;
+    }
+    .boxes .innerBoxes{
+        width: 90%;
+        margin: auto;
+    }
+    .innerHeader .logo{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px;
+    }
+    nav ul li{
+        padding: 10px;
+     }
+     nav ul li a{
+         margin-right: 3px;
+         font-size: 16px;
+     }
+     .innerServices, .innerAbout, .innerBoxes{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .innerAbout .image{
+        margin-right: 0px;
+        margin-bottom: 10px;
+        height: 150px;
+        width: 100%;
+        background-image: url(../image/laptop.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .boxes{
+        padding: 20px;
+    }
+    .box1, .box2, .box3{
+       margin: 0;
+       margin-bottom: 10px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+   }
+   footer .innerFooter{
+       width: 90%;
+       margin: auto;
+       font-size: 10px;
+   }
+   section .innerAbout{
+       width: 90%;
+       margin: auto;
+       margin-right: 0;
+   }
+   section .innerSection{
+       width: 95%;
+   }
+   section .innerSection h1{
+       font-size: 20px;
+   }
+   section .innerSection p{
+       font-size: 15px;
+   }
+   section .innerServices{
+       width: 90%;
+   }
+   .services1, .services2, .services3{
+       margin-bottom: 15px;
+   }
+}
+@media (max-width: 518px){
+    header .innerHeader{
+        width: 98%;
+        margin: auto;
+    }
+    .innerHeader .logo{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 5px;
+    }
+    nav ul li{
+        padding: 5px;
+     }
+     nav ul li a{
+         margin-right: 2px;
+         font-size: 15px;
+     }
+}
+@media (max-width: 350px){
+    header .innerHeader{
+        width: 98%;
+        margin: auto;
+    }
+    .innerHeader .logo{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 4px;
+    }
+    nav ul li{
+        padding: 4px;
+     }
+     nav ul li a{
+         margin-right: 2px;
+         font-size: 13px;
+     }
+     
+}
+.innerSection, .innerServices, .innerAbout, .innerBoxes, .innerSkilles, .innerFooter{
+        width: 55%;
+        margin: auto;
+}
+section{
+    margin-top: 50px;
+}
+.welcome{
+    margin-top: 0;
+    background-color: #F6F6F6;
+    padding: 60px;
+}
+.innerSection{
+    text-align: center;
+    color: black;
+} 
+.innerSection h1{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+.innerServices{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.innerServices h1{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.innerServices p{
+    color: #adadad;
+}
+.about, .skilles{
+    background-color: #F6F6F6;
+    padding: 30px;
+}
+.innerAbout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.innerAbout .image{
+    margin-right: 40px;
+    height: 150px;
+    width: 100%;
+    background-image: url(../image/laptop.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.innerAbout h1{
+    margin-bottom: 5px;
+}
+.innerAbout p{
+    color: #adadad;
+}
+.boxes{
+    padding: 30px;
+}
+.innerBoxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.box1, .box2, .box3{
+    margin-right: 20px;
+    height: 100px;
+    width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: seagreen;
+}
+.box2{
+    background-color: dodgerblue;
+}
+.box3{
+    background-color: firebrick;
+}
+.innerSkilles h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+.innerSkilles label{
+    color: #333333;
+    font-weight: bold;
+    font-size: 14px;
+}
+.innerSkilles progress {
+    width: 100%;
+    height: 35px;
+  }
+footer{
+    padding: 20px;
+    background-color: black;
+}
+.innerFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+
